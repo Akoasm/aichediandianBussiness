@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_bankcard_cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="10dp"
+    app:stackHeaderHeight="150dp">
+
+    <RelativeLayout
+        android:id="@+id/item_background_rl"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:background="@mipmap/bankcard_bg1">
+
+
+        <TextView
+            android:id="@+id/item_bankName_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="28dp"
+            android:text="中国农业银行"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/pw1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/item_bankName_tv"
+            android:layout_below="@id/item_bankName_tv"
+            android:layout_marginTop="20dp"
+            android:text="****"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/pw2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_bankName_tv"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="24dp"
+            android:text="****"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_toRightOf="@id/pw1_tv"/>
+
+        <TextView
+            android:id="@+id/pw3_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_bankName_tv"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="24dp"
+            android:text="****"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_toRightOf="@id/pw2_tv"/>
+        <TextView
+            android:id="@+id/item_lastNumber_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_bankName_tv"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="24dp"
+            android:text="9527"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_toRightOf="@id/pw3_tv"/>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

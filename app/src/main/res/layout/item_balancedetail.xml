@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_balanceType_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="16dp"
+        android:text="提现"
+        android:textColor="#333333"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/item_createTime_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_balanceType_tv"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="2017.11.1"
+        android:textColor="#999999"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/item_balance_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_balanceType_tv"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:text="余额：600.00"
+        android:textColor="#666666"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/item_offMoney_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_balance_tv"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="+5000"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="346dp"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/item_balance_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#e6e6e6" />
+</RelativeLayout>

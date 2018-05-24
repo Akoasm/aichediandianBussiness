@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+<include layout="@layout/home_title_layout"
+    android:id="@+id/balanceDetail_title"></include>
+    <TextView
+        android:id="@+id/img_noData_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/icon_detail"
+        android:text="暂无收支详情"
+        android:textColor="@color/colorOrange"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/balanceDetail_srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/balanceDetail_title"
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/balanceDetail_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/balanceDetail_title"
+            android:background="@color/white"></ListView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</RelativeLayout>

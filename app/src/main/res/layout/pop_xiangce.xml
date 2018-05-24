@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="8dp"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/xiangji"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/actionsheet_single_selector"
+        android:padding="10dp"
+        android:text="照相"
+        android:textStyle="bold"
+        android:textColor="@color/actionsheet_blue"
+/>
+
+    <Button
+        android:id="@+id/xiangche"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/actionsheet_single_selector"
+        android:padding="10dp"
+        android:text="相册"
+        android:textStyle="bold"
+        android:textColor="@color/actionsheet_blue" />
+</LinearLayout>

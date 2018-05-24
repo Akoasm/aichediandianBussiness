@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorOrange">#ff720a</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBack">#F0EFF4</color>
+    <color name="colorText">#2D2D2D</color>
+    <color name="colorBackGround">#f0f0f0</color>
+    <color name="colorLine">#f0f0f2</color>
+    <color name="trans">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="light_gray">#e5e5e5</color>
+    <color name="colorGray2">#bababa</color>
+    <color name="colorGray3">#999999</color>
+    <color name="line_background">#cccccc</color>
+    <color name="text_hint">#666666</color>
+    <color name="colorGray">#333333</color>
+</resources>

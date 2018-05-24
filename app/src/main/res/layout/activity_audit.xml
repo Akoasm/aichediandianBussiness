@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/audit_fail"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:background="@mipmap/aduit_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/aduit_fail_iv"
+                android:src="@mipmap/aduit_fail_fail"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/aduit_fail_tv"
+                android:text="审核失败"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/aduit_fail_iv"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/aduit_fail_reason_tv"
+                android:text="基本信息审核错误"
+                android:layout_below="@id/aduit_fail_iv"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#a4a3a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/aduit_fail_go"
+                android:layout_below="@id/aduit_fail_reason_tv"
+                android:layout_marginTop="10dp"
+                android:layout_alignRight="@id/aduit_fail_reason_tv"
+                android:textColor="@color/colorOrange"
+                android:text="前往修改"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/aduit_go_iv"
+                android:src="@mipmap/aduit_go"
+                android:layout_alignBottom="@id/aduit_fail_go"
+                android:layout_toLeftOf="@id/aduit_fail_go"
+                android:layout_marginRight="10dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/audit_auditing"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/audit_auditing_iv"
+            android:src="@mipmap/audit_auditing"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="审核中"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/audit_auditing_iv"
+            android:layout_marginBottom="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/audit_data"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/audit_data_iv"
+            android:src="@mipmap/audit_data"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="审核资料未填写!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_above="@+id/audit_data_iv"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/audit_data_go_tv"
+            android:text="去填写 >"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOrange"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/audit_data_iv"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack"
+    android:orientation="vertical">
+
+
+    <!--中间内容区-->
+    <RelativeLayout
+        android:id="@+id/activity_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </RelativeLayout>
+
+
+    <!--最下方图标区-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/activity_main_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/activity_main_home_img"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/btn_main_home_t" />
+
+            <TextView
+                android:id="@+id/activity_main_home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="首页"
+                android:textColor="@color/colorOrange" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_main_commodity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/activity_main_commodity_img"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/btn_main_business_f" />
+
+            <TextView
+                android:id="@+id/activity_main_commodity_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="商品管理"
+                android:textColor="#595A5A" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_main_order"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/activity_main_order_img"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/btn_main_order_f" />
+
+            <TextView
+                android:id="@+id/activity_main_order_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="订单管理"
+                android:textColor="#595A5A" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_main_merchant"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/activity_main_merchant_img"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/icon_main_me_f" />
+
+            <TextView
+                android:id="@+id/activity_main_merchant_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="客户中心" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

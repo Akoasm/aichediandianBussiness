@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sina.rwxchina.aichediandianbussiness">
+
+    <permission
+        android:name="com.sina.rwxchina.aichediandianbussiness.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="com.sina.rwxchina.aichediandianbussiness.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+
+    <application
+        android:name="com.jnyilin.basiclib.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/acdd_log"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <!--<service-->
+            <!--android:name="com.baidu.location.f"-->
+            <!--android:enabled="true"-->
+            <!--android:process=":remote" />-->
+
+        <!--<activity android:screenOrientation="portrait" android:name=".Order.OrderDetailActivity" />-->
+        <activity android:screenOrientation="portrait" android:name=".login.activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".my.activity.ShareWebActivity" android:screenOrientation="portrait" android:launchMode="singleTask"></activity>
+        <activity android:name=".my.activity.WithdrawActivity" android:screenOrientation="portrait" android:launchMode="singleTask"></activity>
+        <activity android:name=".my.activity.WithDrawDetailActivity" android:screenOrientation="portrait" android:launchMode="singleTask"></activity>
+        <activity android:name=".my.activity.WithdrawStatusActivity" android:screenOrientation="portrait" android:launchMode="singleTask"></activity>
+        <activity android:name=".my.activity.AddBankCardActivity" android:screenOrientation="portrait" android:launchMode="singleTask"></activity>
+        <activity android:name=".my.activity.BankCardActivity" android:screenOrientation="portrait" android:launchMode="singleTask"></activity>
+        <activity android:name=".my.activity.BalanceDetailActivity" android:screenOrientation="portrait" android:launchMode="singleTask"></activity>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="wuWhqUTCEjzrP7zvrf3TkhMK7SIYZGGf" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".MainActivity"/>
+
+
+
+
+        <activity android:name=".home.activity.ScanCodeActivity" />
+        <activity android:name=".order.activity.OrderDetailActivity" />
+        <activity android:name=".login.activity.RegisterActivity" />
+        <activity android:name=".login.activity.ForgetPasswordActivity" />
+        <activity android:name=".my.activity.UpdatePasswordActivity" />
+        <activity android:name=".my.activity.ReportFormActivity" />
+        <activity android:name=".commodity.WebActivity" />
+        <activity android:name=".login.activity.AuditActivity" />
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.sina.rwxchina.aichediandianbussiness.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public"></meta-data>
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="54dp">
+    <TextView
+        android:id="@+id/withdraw_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017年11月"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:textColor="#333333"
+        android:textSize="13sp"/>
+    <TextView
+        android:id="@+id/withdraw_balance_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提现总额：600.00"
+        android:layout_below="@id/withdraw_date_tv"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:textColor="#666666"
+        android:textSize="10sp"/>
+    <ImageView
+        android:id="@+id/date_iv"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/icon_date"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/withdraw_balance_tv"
+        android:background="#e6e6e6"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
